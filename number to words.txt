@@ -1,0 +1,49 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int n = -870;
+	int rem=0,rev=0;
+	int m = n;
+	if(n<0)
+	{
+	   n = n*-1;
+	   System.out.print("-");
+	}
+	while(n!=0)
+	{
+	   	rem = n%10;
+	   	rev = rev * 10 + rem;
+	   	n = n/10;
+	   	
+	}
+	//	System.out.println(rev);
+		
+	
+	 while(rev!=0)
+	 {
+		switch(rev%10)
+	{
+		case 0:System.out.print("zero\t");break;
+		case 1: System.out.print("one\t");break;
+		case 2: System.out.print("two\t");break;
+		case 3: System.out.print("three\t");break;
+		case 4: System.out.print("four\t");break;
+		case 5: System.out.print("five\t");break;
+		case 6: System.out.print("six\t");break;
+		case 7: System.out.print("seven\t");break;
+		case 8: System.out.print("eight\t");break;
+		case 9: System.out.print("nine\t");break;
+		default :  System.out.print("invalis");
+
+
+	}
+	 rev = rev/10;
+	}
+	while(m%10==0&m!=0)
+	{
+ 	   m = m/10;
+ 	   System.out.print("hunderad");
+	}
+	
+	}	
+}
